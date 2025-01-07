@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
-public class driverManage {
+public class driverManager {
     protected static WebDriver driver;
 
 

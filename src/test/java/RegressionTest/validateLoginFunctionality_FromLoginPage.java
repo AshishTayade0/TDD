@@ -1,0 +1,16 @@
+package RegressionTest;
+
+import WebDriverManager.driverManager;
+import com.Pages.SignInPage;
+import org.testng.annotations.Test;
+
+public class validateLoginFunctionality_FromLoginPage extends driverManager {
+    @Test
+    public void verifyLoginFunctionality_SignInFromLoginPage(){
+        driver.get("https://github.com/login");
+        SignInPage signInPage = new SignInPage(driver);
+        signInPage.sendKeysToUserNameTextBox("admin");
+        signInPage.sendKeysToPasswordTextBox("admin");
+        signInPage.clickSignInButton();
+    }
+}

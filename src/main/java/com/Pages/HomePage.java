@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class HomePage {
-    private WebDriver driver;
+    protected  static WebDriver driver;
 
     private By productButton = By.xpath("//button[contains(text(),'Product')]");
     private By solutionsButton = By.xpath("//button[contains(text(),'Solutions')]");
@@ -40,6 +40,9 @@ public class HomePage {
     }
     public void pricingHyperLinkIsDisplayed(){
         driver.findElement(pricingHyperLink).isDisplayed();
+    }
+    public void signInHyperLinkIsDisplayed(){
+        driver.findElement(signInHyperLink).isDisplayed();
     }
     public void signInHyperLinkClick(){
         driver.findElement(signInHyperLink).click();
