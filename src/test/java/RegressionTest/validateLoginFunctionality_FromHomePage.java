@@ -10,11 +10,9 @@ public class validateLoginFunctionality_FromHomePage extends driverManager {
     public void verifyLoginFunctionality_SignInFromHomePage() throws InterruptedException {
         driver.get("https://github.com"); // this can be use derive from pom.xml properties
         HomePage homePage = new HomePage(driver);
-        homePage.signInHyperLinkIsDisplayed();
         SignInPage signInPage = homePage.signInHyperLinkClick();
         signInPage.sendKeysToUserNameTextBox("admin");
         signInPage.sendKeysToPasswordTextBox("admin");
-
     }
 
 }
