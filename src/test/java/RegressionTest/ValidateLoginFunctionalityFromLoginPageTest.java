@@ -4,7 +4,7 @@ import WebDriverManager.driverManager;
 import com.Pages.SignInPage;
 import org.testng.annotations.Test;
 
-public class validateLoginFunctionality_FromLoginPage extends driverManager {
+public class ValidateLoginFunctionalityFromLoginPageTest extends driverManager {
     @Test
     public void verifyLoginFunctionality_SignInFromLoginPage(){
         driver.get("https://github.com/login"); // this can be use derive from pom.xml properties

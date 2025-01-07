@@ -4,7 +4,7 @@ import WebDriverManager.driverManager;
 import com.Pages.HomePage;
 import org.testng.annotations.Test;
 
-public class validateHeaderElementOfGithubHomepage extends driverManager {
+public class ValidateHeaderElementOfGithubHomepageTest extends driverManager {
     @Test
     public void verifyThatAllHeaderElementArePresentOnHomePage(){
         driver.get("https://github.com"); // this can be use derive from pom.xml properties

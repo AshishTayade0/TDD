@@ -6,12 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class SignInPage {
     protected static WebDriver driver;
-    private By usernameTextBox = By.id("login_field");
-    private By passwordTextBox = By.id("password");
-    private By signInButton = By.xpath("//input[@value='Sign in']");
+    private final By usernameTextBox = By.id("login_field");
+    private final By passwordTextBox = By.id("password");
+    private final By signInButton = By.xpath("//input[@value='Sign in']");
+    private final By signInWithYourIdentityProviderButton = By.xpath("//input[@value='Sign in with your identity provider']");
 
     public SignInPage(WebDriver driver){
-        this.driver=driver;
+        SignInPage.driver =driver;
     }
 
     public void sendKeysToUserNameTextBox(String username){
@@ -24,6 +25,9 @@ public class SignInPage {
     }
     public void clickSignInButton(){
         driver.findElement(signInButton).click();
+    }
+    public void signInWithYourIdentityProviderButtonIsDisplayed(){
+        driver.findElement(signInWithYourIdentityProviderButton).isDisplayed();
     }
 
 }

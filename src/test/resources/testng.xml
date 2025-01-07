@@ -2,13 +2,13 @@
 <suite name="GitHubTDDFramework" parallel="methods" thread-count="4">
     <test name="RegressionTests">
         <classes>
-            <class name="RegressionTest.validateLoginFunctionality_FromHomePage" />
-            <class name="RegressionTest.validateLoginFunctionality_FromLoginPage" />
+            <class name="RegressionTest.ValidateLoginFunctionalityFromHomePageTest" />
+            <class name="RegressionTest.ValidateLoginFunctionalityFromLoginPageTest" />
         </classes>
     </test>
     <test name="SmokeTests">
         <classes>
-            <class name="SmokeTest.validateHeaderElementOfGithubHomepage" />
+            <class name="SmokeTest.ValidateHeaderElementOfGithubHomepageTest" />
         </classes>
     </test>
 </suite>
