@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class validateLoginFunctionality_FromLoginPage extends driverManager {
     @Test
     public void verifyLoginFunctionality_SignInFromLoginPage(){
-        driver.get("https://github.com/login");
+        driver.get("https://github.com/login"); // this can be use derive from pom.xml properties
         SignInPage signInPage = new SignInPage(driver);
         signInPage.sendKeysToUserNameTextBox("admin");
         signInPage.sendKeysToPasswordTextBox("admin");
