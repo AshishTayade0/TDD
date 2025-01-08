@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="GitHubTDDFramework" parallel="methods" thread-count="4">
+<suite name="GitHubTDDFramework" parallel="false" thread-count="10">
     <test name="RegressionTests">
         <classes>
             <class name="RegressionTest.ValidateLoginFunctionalityFromHomePageTest" />
@@ -9,6 +9,8 @@
     <test name="SmokeTests">
         <classes>
             <class name="SmokeTest.ValidateHeaderElementOfGithubHomepageTest" />
+            <class name="SmokeTest.ValidateSignInWithIdentityProviderTest" />
         </classes>
     </test>
+
 </suite>

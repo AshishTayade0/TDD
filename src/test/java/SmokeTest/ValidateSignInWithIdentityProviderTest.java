@@ -11,5 +11,6 @@ public class ValidateSignInWithIdentityProviderTest extends driverManager {
         SignInPage signInPage = new SignInPage(driver);
         signInPage.sendKeysToUserNameTextBox("User_1");
         signInPage.signInWithYourIdentityProviderButtonIsDisplayed();
+
     }
 }

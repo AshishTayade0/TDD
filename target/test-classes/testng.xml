@@ -1,14 +1,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="GitHubTDDFramework" parallel="methods" thread-count="4">
+<suite name="GitHubTDDFramework" parallel="false" thread-count="10">
     <test name="RegressionTests">
         <classes>
-            <class name="RegressionTest.validateLoginFunctionality_FromHomePage" />
-            <class name="RegressionTest.validateLoginFunctionality_FromLoginPage" />
+            <class name="RegressionTest.ValidateLoginFunctionalityFromHomePageTest" />
+            <class name="RegressionTest.ValidateLoginFunctionalityFromLoginPageTest" />
         </classes>
     </test>
     <test name="SmokeTests">
         <classes>
-            <class name="SmokeTest.validateHeaderElementOfGithubHomepage" />
+            <class name="SmokeTest.ValidateHeaderElementOfGithubHomepageTest" />
+            <class name="SmokeTest.ValidateSignInWithIdentityProviderTest" />
         </classes>
     </test>
+
 </suite>

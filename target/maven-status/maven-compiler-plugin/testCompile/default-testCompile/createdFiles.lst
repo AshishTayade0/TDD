@@ -1,0 +1,5 @@
+SmokeTest/ValidateHeaderElementOfGithubHomepageTest.class
+SmokeTest/ValidateSignInWithIdentityProviderTest.class
+WebDriverManager/driverManager.class
+RegressionTest/ValidateLoginFunctionalityFromLoginPageTest.class
+RegressionTest/ValidateLoginFunctionalityFromHomePageTest.class
