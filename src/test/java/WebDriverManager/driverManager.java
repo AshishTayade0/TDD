@@ -28,7 +28,7 @@ public class driverManager {
         extent.setSystemInfo("OS", System.getProperty("os.name"));
         extent.setSystemInfo("Browser", "Chrome");
         extent.setSystemInfo("Environment", "PROD");
-        extent.setSystemInfo("QA", "Ashish Tayade");
+        extent.setSystemInfo("QA", "Name");
     }
 
     @BeforeTest(alwaysRun = true)
