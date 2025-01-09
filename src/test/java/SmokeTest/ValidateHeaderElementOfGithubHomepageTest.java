@@ -5,6 +5,7 @@ import com.Pages.HomePage;
 import org.testng.annotations.Test;
 
 public class ValidateHeaderElementOfGithubHomepageTest extends driverManager {
+
     @Test
     public void verifyThatAllHeaderElementArePresentOnHomePage(){
         driver.get("https://github.com"); // this can be use derive from pom.xml properties
@@ -16,5 +17,6 @@ public class ValidateHeaderElementOfGithubHomepageTest extends driverManager {
         homePage.enterpriceButtonIsDisplayed();
         homePage.pricingHyperLinkIsDisplayed();
         homePage.signInHyperLinkIsDisplayed();
+
     }
 }
