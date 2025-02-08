@@ -1,11 +1,13 @@
 package com.Pages;
 
+import com.Utils.TakeScreenshot;
+import com.WebDriverFactory.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
+    TakeScreenshot takeScreenshot;
     protected  static WebDriver driver;
-
     private final By productButton = By.xpath("//button[contains(text(),'Product')]");
     private final By solutionsButton = By.xpath("//button[contains(text(),'Solutions')]");
     private final By resourcesButton = By.xpath("//button[contains(text(),'Resources')]");

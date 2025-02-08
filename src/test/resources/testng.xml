@@ -10,6 +10,7 @@
         <classes>
             <class name="SmokeTest.ValidateHeaderElementOfGithubHomepageTest" />
             <class name="SmokeTest.ValidateSignInWithIdentityProviderTest" />
+            <class name="SmokeTest.TestFail" />
         </classes>
     </test>
 
