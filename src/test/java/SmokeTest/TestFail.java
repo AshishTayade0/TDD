@@ -6,11 +6,13 @@ import org.testng.annotations.Test;
 
 public class TestFail extends driverManager {
     //"Intentionally cause the test to fail to verify its failure is reflected in the report."
+    // Commenting out the whole test case for Jenkin's build execution
+    /*
     @Test
     public void failTest(){
         driver.get("https:google.com");
         HomePage homePage = new HomePage(driver);
         homePage.solutionButtonIsDisplayed();
-
+*/
     }
 }
